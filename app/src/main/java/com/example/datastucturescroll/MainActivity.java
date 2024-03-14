@@ -43,6 +43,13 @@ public class MainActivity extends AppCompatActivity
             {
                 removeStudent();
             }
-        }
+        });
+    }
+
+    private void addStudent()
+    {
+        String name = nameEditText.getText().toString();
+        String age = ageEditText.getText().toString();
+        String gpa = gpaEditText.getText().toString();
     }
 }
