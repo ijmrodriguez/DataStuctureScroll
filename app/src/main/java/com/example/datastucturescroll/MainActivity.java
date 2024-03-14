@@ -28,7 +28,21 @@ public class MainActivity extends AppCompatActivity
         Button addButton = findViewById(R.id.addButton);
         addButton.setOnClickListener(new View.OnClickListener()
         {
+            @Override
+            public void onClick(View v)
+            {
+                addStudent();
+            }
+        });
 
+        Button removeButton = findViewById(R.id.removeButton);
+        removeButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                removeStudent();
+            }
         }
     }
 }
