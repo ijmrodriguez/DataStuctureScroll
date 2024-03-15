@@ -22,10 +22,19 @@ public class MainActivity extends AppCompatActivity {
 
         queue = new QueueLinkedList();
 
-        // Populating QueueLinkedList
+        // Populating QueueLinkedList with additional students to cause overflow
         queue.enqueue(new Student("John", 13, 4.0));
         queue.enqueue(new Student("Alice", 16, 4.2));
         queue.enqueue(new Student("Ben", 14, 3.5));
+        queue.enqueue(new Student("Emily", 18, 3.8));
+        queue.enqueue(new Student("Mike", 17, 4.1));
+        queue.enqueue(new Student("Samantha", 15, 3.9));
+        queue.enqueue(new Student("David", 16, 3.7));
+        queue.enqueue(new Student("Lily", 14, 4.3));
+        queue.enqueue(new Student("Ryan", 17, 3.6));
+        queue.enqueue(new Student("Sophia", 15, 4.0));
+        queue.enqueue(new Student("Daniel", 16, 3.8));
+        queue.enqueue(new Student("Olivia", 14, 4.2));
 
         nameEditText = findViewById(R.id.nameEditText);
         ageEditText = findViewById(R.id.ageEditText);
